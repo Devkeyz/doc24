@@ -9,6 +9,7 @@
 	"author": "WebDesign Master",
 	"license": "ISC",
 	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^5.14.0",
 		"bootstrap": "^4.5.2",
 		"browser-sync": "^2.26.12",
 		"del": "^5.1.0",
@@ -23,5 +24,11 @@
 		"gulp-sass": "^4.1.0",
 		"gulp-stylus": "^2.7.0",
 		"gulp-uglify-es": "^2.0.0"
+	},
+	"dependencies": {
+		"font-awesome": "^4.7.0",
+		"gulp-cli": "^2.3.0",
+		"jquery": "^3.5.1",
+		"popper": "^1.0.1"
 	}
 }

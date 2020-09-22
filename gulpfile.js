@@ -54,6 +54,7 @@ const imagemin     = require('gulp-imagemin');
 const newer        = require('gulp-newer');
 const rsync        = require('gulp-rsync');
 const del          = require('del');
+const gulpCleanCss = require('gulp-clean-css');
 
 function browsersync() {
 	browserSync.init({

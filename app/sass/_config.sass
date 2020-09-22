@@ -5,6 +5,8 @@ $fontsize: 16px // Body Font Size
 $textcolor: #333 // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 $roboto: Roboto, sans-serif // Roboto Font Family
+$maincolor: #5e8faf // Main Color
+$fontawesome: FontAwesome
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px
@@ -12,10 +14,13 @@ $gutter: $grid-gutter-width
 
 // IMPORT SECTION
 
+$fa-font-path: 'node_modules/@fortawesome/fontawesome-free/webfonts' !default
+
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
-// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
-// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+@import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome'
 
 // FONTS LOAD SECTION
 
@@ -27,10 +32,13 @@ $gutter: $grid-gutter-width
 		// font-display: swap // Uncomment to initially display system fonts
 		src: local($fname), url($furl) format('woff2')
 
-@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2')
+@include font('Roboto', normal, 300, '../fonts/roboto-light-webfont.woff')
+@include font('Roboto', italic, 300, '../fonts/roboto-lightitalic-webfont.woff2')
+@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff')
 @include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2')
 @include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2')
 @include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include font('FontAwesome', normal, 400, $fa-font-path)
 
 // GENERAL DOCUMENT STYLES
 
