@@ -8,6 +8,7 @@ section
 .title
   font-size: 36px
   color: #000
+  padding-bottom: 65px
 
 p
   font-size: 24px
@@ -25,6 +26,8 @@ header
 .hero
   background: url(../images/src/slider_doc_desktop.png), linear-gradient(90deg, rgba(240,244,247,1) 0%, rgba(90,96,101,1) 100%)
   background-size: cover
+  background-repeat: no-repeat
+  background-position: bottom
   border-radius: 10px
   transition: .2s ease
   a
@@ -73,3 +76,106 @@ header
     .telegram-icon
       width: 60%
       filter: invert(99%) sepia(4%) saturate(54%) hue-rotate(142deg) brightness(121%) contrast(100%)
+
+.video-chat
+  img
+    max-width: 100%
+    height: auto
+  p
+    font-size: 24px
+    margin-bottom: 50px
+  ul
+    padding: 0
+    margin: 0
+    font-size: 22px
+    line-height: 22px
+    font-weight: 300
+    li
+      list-style: none
+      margin-bottom: 27px
+      svg
+        margin-right: 22px
+
+.benefits
+  display: flex
+  flex-direction: row
+  text-align: center
+  align-items: baseline
+  justify-content: space-between
+  font-size: 20px
+  line-height: 24px
+  font-weight: 400
+  padding: 0
+  @include media-breakpoint-down(sm)
+    flex-direction: column
+  .benefit-item
+    @include media-breakpoint-down(sm)
+      margin-bottom: 30px
+  img
+    max-width: 50%
+    margin-bottom: 22px
+  span
+    display: block
+    margin: 0
+    padding: 0
+
+.doctors
+  padding-left: 0
+  padding-right: 0
+  h2.title
+    text-align: center
+    padding-bottom: 30px
+    line-height: 36px
+  .doctors__description
+    display: block
+    font-size: 24px
+    font-weight: 300
+    text-align: center
+    padding-bottom: 30px
+  
+  .doctor-item
+    background-color: #edf1f5
+    border-radius: 10px
+    padding: 10px
+    @include media-breakpoint-up(sm)
+    @include media-breakpoint-up(xs) 
+      margin-bottom: 10px
+    &__bio
+      display: flex
+      align-items: center
+      margin-bottom: 30px
+      img
+        margin-right: 15px
+      span
+        display: block
+        font-size: 20px
+      .name
+        font-weight: 600
+      .position
+        color: #4c86a9
+        font-weight: 300
+      .experience
+        font-weight: 400
+    &__about
+      padding: 0 10px
+      font-size: 18px
+
+.slick-list
+  margin-left: -27px
+.slick-slide
+  margin-left: 27px
+
+.message
+  padding-left: 0
+  padding-right: 0
+  padding-top: 0
+  text-align: center
+  .title
+    padding-bottom: 30px
+  &__description
+    font-size: 24px
+    font-weight: 300
+
+footer
+  height: 100px
+  background-color: #4c86a9
